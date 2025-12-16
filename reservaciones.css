@@ -1,0 +1,122 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 700; 
+}
+
+h2 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+.small-text {
+    font-weight: 300;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 80px;
+}
+
+.nav-header {
+    
+    display: flex;
+    gap: 40px;
+}
+
+.logo-header {
+    display: flex;
+    gap: 20px;
+}
+
+#logo-header {
+    color: #E63946;
+    font-size: 40px;
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+.logo-header h3 {
+    color: #1D1D1D;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+.a-nav {
+    font-weight: 500;
+    color: #1b0e0f;
+    text-decoration: none;
+}
+
+.a-reservaciones {
+    font-weight: 700;
+    color:#e63746;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+     text-underline-offset: 6px;
+}
+
+.img-main {
+    width: 100%;
+    height: 50vh;
+    min-height: 700px;
+    object-fit: cover;  
+    display: block;     
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Formulario de reserva */
+.section {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border: 2px solid #F0EDED;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Título con ícono */
+.section > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.section > div:first-child .material-symbols-outlined {
+    color: #E63946;
+    font-size: 32px;
+}
+
+.section > div:first-child h2 {
+    color: #1D1D1D;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+

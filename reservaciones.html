@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="reservaciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-header">        
+            <span id="logo-header" class="material-symbols-outlined">local_pizza</span>
+            <h3>Bella Napoli</h3>
+        </div>
+
+        <nav class="nav-header">
+            <a class="a-nav" href="">Home</a>
+            <a class="a-nav" href="">Menú</a>
+            <a class="a-reservaciones" href="">Reservaciones</a>
+        </nav>
+    </header>
+
+    <main>
+        <img class="img-main" src="assets/reservaciones/Img-main.png" alt="">
+        <h1>Reserva tu Mesa</h1>
+        <p> Vive la experiencia de la verdadera pizza napolitana en un ambiente único.</p>
+    </main>
+
+    <section>
+        <form  class="section" action="">
+            <div>
+                <span class="material-symbols-outlined">calendar_month</span>
+                <h2>Datos de la Reserva</h2>
+            </div>
+
+
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="" name="" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="300 000 000" required>
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha">
+
+
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora" value="00:00">
+            </div>
+
+            <div>
+                <label for="personas">Numero de personas</label>
+                <input type="number" id="personas" name="perosnas" min="1" max="50" placeholder="1" required>
+            </div>
+           
+            <div>
+                <label for="mensaje">Comentarios o peticiones especiales</label>
+                <textarea name="mensaje" id="mensaje" placeholder="¿Alguna alergia o celebración especial?"></textarea>
+            </div>
+            
+            <div>
+                <button type="submit">Comfirmar Reserva</button>
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </div>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
