@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,51 +23,69 @@
         </nav>
     </header>
 
-    <main>
+    <div class="main"> 
         <img class="img-main" src="assets/reservaciones/Img-main.png" alt="">
-        <h1>Reserva tu Mesa</h1>
-        <p> Vive la experiencia de la verdadera pizza napolitana en un ambiente único.</p>
-    </main>
+        <div class="text-fixed">
+            <h1>Reserva tu Mesa</h1>
+            <p> Vive la experiencia de la verdadera pizza napolitana en un ambiente único.</p>
+        </div>
+    </div>
 
-    <section>
-        <form  class="section" action="">
-            <div>
+
+    <section class="contenedor">
+        <form  class="form" action="">
+
+            <div class="title">
                 <span class="material-symbols-outlined">calendar_month</span>
                 <h2>Datos de la Reserva</h2>
             </div>
 
 
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="" name="" required>
+            <div class="row-one">
+                <div class="part">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
 
-                <label for="correo">Correo</label>
-                <input type="email" id="correo" name="correo" required>
+                <div class="part">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
             </div>
 
-            <div>
-                <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="300 000 000" required>
+            <div class="row-two" >
+                <div class="part">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="300 000 000" required>
+                </div>
 
-                <label for="fecha">Fecha</label>
-                <input type="date" id="fecha" name="fecha">
+                <div class="part">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+            
 
-
-                <label for="hora">Hora</label>
-                <input type="time" id="hora" name="hora" value="00:00">
+                <div class="part">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" name="hora" value="00:00">
+                </div>
             </div>
 
-            <div>
-                <label for="personas">Numero de personas</label>
-                <input type="number" id="personas" name="perosnas" min="1" max="50" placeholder="1" required>
+            <div class="row-three">
+                <div class="part">
+                    <label for="personas">Numero de personas</label>
+                    <input type="number" id="personas" name="personas" min="1" max="50" placeholder="1" required>
+                </div>  
             </div>
            
-            <div>
-                <label for="mensaje">Comentarios o peticiones especiales</label>
-                <textarea name="mensaje" id="mensaje" placeholder="¿Alguna alergia o celebración especial?"></textarea>
+            <div class="row-four">
+                <div class="part">
+                    <label for="mensaje">Comentarios o peticiones especiales</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="¿Alguna alergia o celebración especial?"></textarea>
+                <div class="part">
             </div>
             
-            <div>
+            <div class="button">
                 <button type="submit">Comfirmar Reserva</button>
                 <span class="material-symbols-outlined">arrow_forward</span>
             </div>
