@@ -30,8 +30,10 @@ body{
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding-inline: 3rem; 
-
+    padding-inline: 3rem;  
+    position: fixed;
+background-color: white; 
+width: 100%;
 }
 .nom_header{/*nombre en la parte superior derecha del header*/
     display: flex; 
@@ -135,27 +137,22 @@ body{
     display: flex;  
     justify-content: center; 
     align-items: center; 
-    flex-flow: row wrap;
-    height: 50vh;
+    flex-flow: row wrap; 
+    height: 60vh;
     width: 100%;
     gap: 1rem;  
-    padding: 3rem 5rem;
+    padding: 3rem 0rem;
+    gap: 3rem;
 }
   
-.img_sobreNosotros{ 
-    width: 50%;  
-    height: 100%;
-    background: url("index/assets/sobreNosotros/Sobre\ nosotros1.png");
-    background-repeat: no-repeat;   
-    border-radius: 40px; 
-    
-} 
-.boxText_sobreNosotros{
+
+.boxText_sobreNosotros{/*box general sobre nosotros*/
     width: 40%;   
     height: 100%;
     display: flex;
     justify-content: space-evenly;
-    flex-flow: column wrap; 
+    flex-flow: column nowrap;    
+    min-width: 500px;
 
 }  
 .subtitle_boxText{
@@ -187,17 +184,37 @@ body{
     border: 2px transparent solid; 
     color: white; 
     transition: all .3s ease;  
-}   
-.descrip_img_sobreNosotros{
-    width: 10rem;  
-    height: 10rem;
-    border-radius: 100px; 
+}  
+.img_sobreNosotros{ 
+    width: 50%;  
+    height: 90%; 
+    background: url("index/assets/sobreNosotros/Sobre\ nosotros1.png");
+    background-repeat: no-repeat;   
+    background-position: center center;
+    border-radius: 80px;     
+    background-size: cover; 
+    position: relative;
+    
+} 
+
+.descrip_img_sobreNosotros{ /*msj flotante*/
+    width: 12rem;  
+    height: 12rem;
+    font-family: var(--text--); 
     display: flex; 
+    align-items: center; 
     justify-content: center; 
-    align-items: center;
-    background-color: #e63746; 
-    padding: 2rem;
+    text-transform: capitalize;
     color: white; 
+    border-radius: 100px;  
+    background-color: #e63746; 
     text-align: center; 
-    font-size: 1.2rem;
-}
+    font-size: 1.5rem;  
+    line-height: 1.8rem;    
+    position: absolute; 
+    bottom: -8%; 
+    left: -8%;
+    /* position: absolute;  */
+    
+    
+} 
