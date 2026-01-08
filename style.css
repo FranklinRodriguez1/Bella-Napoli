@@ -41,11 +41,12 @@ width: 100%;
     align-items: center; 
     gap: .5rem; 
     .nomText_header{
-        font-size: 20px; 
+        font-size: 2rem;  
+        font-weight: 700;
         font-family: var(--text--);
     } 
     .nomIcon_header{
-        font-size: 3rem; 
+        font-size: 4rem; 
         color: var(--primary--); 
         text-shadow: -5px 3px 5px rgba(0, 0, 0, 0.212); 
         font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
@@ -59,6 +60,9 @@ width: 100%;
         color: #211112  ;
         text-decoration: none; 
         font-family: var(--text--);
+    } 
+    a:hover{
+        text-decoration: underline crimson;
     }
 }  
 /* lista de botones del nav */
@@ -73,9 +77,15 @@ width: 100%;
     font-size: 20px;
     box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.429);
 } 
+.buttonReserva:hover{
+    background-color: white; 
+    color: var(--primary--); 
+    transition: .3s ease;
+}
 
 /*inicio del hero*/
-.hero{
+.hero{ 
+    margin-top: 7rem;
     height:90vh;   
     width: 100%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.74)),url(index/assets/backgroundHero.png);
@@ -138,11 +148,10 @@ width: 100%;
     justify-content: center; 
     align-items: center; 
     flex-flow: row wrap; 
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     gap: 1rem;  
     padding: 3rem 0rem;
-    gap: 3rem;
 }
   
 
@@ -194,14 +203,15 @@ width: 100%;
     border-radius: 80px;     
     background-size: cover; 
     position: relative;
-    
+    padding: 1rem;
 } 
 
 .descrip_img_sobreNosotros{ /*msj flotante*/
     width: 12rem;  
     height: 12rem;
     font-family: var(--text--); 
-    display: flex; 
+    display: flex;  
+    flex-flow: column;
     align-items: center; 
     justify-content: center; 
     text-transform: capitalize;
@@ -213,8 +223,7 @@ width: 100%;
     line-height: 1.8rem;    
     position: absolute; 
     bottom: -8%; 
-    left: -8%;
+    left: -8%; 
+    gap: .5rem; 
     /* position: absolute;  */
-    
-    
 } 
