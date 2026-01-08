@@ -25,15 +25,14 @@ body{
 /* contenedor general padre de todos los elementos e hijo unicamente del boddy */ 
 
 .header{
-    padding: 2rem 5rem; 
+    padding: 1rem 3rem; 
     box-shadow: 0px -2px 5px black ; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding-inline: 3rem;  
     position: fixed;
-background-color: white; 
-width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    width: 100%;
 }
 .nom_header{/*nombre en la parte superior derecha del header*/
     display: flex; 
@@ -54,7 +53,7 @@ width: 100%;
 }  
 .accessList{
     display: flex; 
-    gap: 2rem;
+    gap: 3rem;
     font-size: 1.3rem; 
     a{
         color: #211112  ;
@@ -80,13 +79,13 @@ width: 100%;
 .buttonReserva:hover{
     background-color: white; 
     color: var(--primary--); 
-    transition: .3s ease;
+    transition: .3s ease; 
 }
 
 /*inicio del hero*/
 .hero{ 
-    margin-top: 7rem;
-    height:90vh;   
+    margin-top: 6rem;
+    height:92vh;   
     width: 100%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.74)),url(index/assets/backgroundHero.png);
     background-repeat: no-repeat;   
@@ -195,7 +194,7 @@ width: 100%;
     transition: all .3s ease;  
 }  
 .img_sobreNosotros{ 
-    width: 50%;  
+    width: 40%;  
     height: 90%; 
     background: url("index/assets/sobreNosotros/Sobre\ nosotros1.png");
     background-repeat: no-repeat;   
@@ -225,5 +224,52 @@ width: 100%;
     bottom: -8%; 
     left: -8%; 
     gap: .5rem; 
-    /* position: absolute;  */
 } 
+/* inicio de destacados */ 
+
+.Destacados{/*box de seccion de destacados*/
+    width: 100vw;  
+    height: auto;
+    background-color:aqua ; 
+    display: flex;   
+    flex-flow: column nowrap; 
+    gap: 2rem; 
+    overflow-x: scroll !important;   
+    padding: 2rem;
+
+}  
+.destacado_Encabezado{ /*encabezado de la seccion*/
+    text-align: center;  
+    display: block;
+    width: 100%; 
+    padding-top: 3rem;
+} 
+.box_titleDestacados, .box_textDestacados{ /*textos dentro del encabezado*/
+    text-align: center;
+}
+.boxDestacados{/*carrusel de destacados*/
+    display: flex; 
+    width: 200%;
+    justify-content: space-around; 
+    align-items: center;  
+    flex-flow: row nowrap;   
+    
+} 
+.box_carruselCard--destacados{
+    width: 25rem !important; 
+    height: 30rem; 
+    background-color: #e63746; 
+    position: relative;
+} 
+.card_imgBoxCarrusel{  
+    width: 25rem; 
+    height: 22rem;
+    background: url(destacado/destacado1.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    position: relative;  
+}
+.card_imgBoxCarrusel p{
+    position: absolute;
+}
