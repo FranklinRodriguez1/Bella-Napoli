@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="reservaciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-header">        
+            <span id="logo-header" class="material-symbols-outlined">local_pizza</span>
+            <h3>Bella Napoli</h3>
+        </div>
+
+        <nav class="nav-header">
+            <a class="a-nav" href="../index.html">Home</a>
+            <a class="a-nav" href="">Menú</a>
+            <a class="a-reservaciones" href="">Reservaciones</a>
+        </nav>
+    </header>
+
+    <main class="main"> 
+        <img class="img-main" src="../assets/reservaciones/Img-main.png" alt="">
+        <div class="text-fixed">
+            <h1>Reserva tu Mesa</h1>
+            <p> Vive la experiencia de la verdadera pizza napolitana en un ambiente único.</p>
+        </div>
+    
+        <section class="contenedor">
+            <form  class="form" action="">
+
+                <div class="title">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <h2>Datos de la Reserva</h2>
+                </div>
+
+
+                <div class="row-one">
+                    <div class="part part-one">
+                        <label for="nombre">Nombre complecto</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Juan Perez" required>
+                    </div>
+
+                    <div class="part part-one">
+                        <label for="correo">Correo electronico</label>
+                        <input type="email" id="correo" name="correo" placeholder="juan@ejemplo.com" required>
+                    </div>
+                </div>
+
+                <div class="row-two" >
+                    <div class="part">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 123 4567" required>
+                    </div>
+
+                    <div class="part">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                
+
+                    <div class="part">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora" name="hora" value="12:00">
+                    </div>
+                </div>
+
+                <div class="row-three">
+                    <div class="part part-three">
+                        <label for="personas">Numero de personas</label>
+                        <div class="number-input">
+                            <button type="button" class="btn minus">−</button>
+                            <input type="number" id="personas" name="personas" min="2" max="50" placeholder="2" required>
+                            <button type="button" class="btn plus">+</button>
+                        </div>
+                    </div>  
+                </div>
+            
+                <div class="row-four">
+                    <div class="part part-four">
+                        <label for="mensaje">Comentarios o peticiones especiales</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="¿Alguna alergia o celebración especial?"></textarea>
+                    <div class="part">
+                </div>
+                
+                <div class="button">
+                    <button type="submit">
+                        Comfirmar Reserva
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+    <main/>
+
+    <section class="section-we">
+        <div class="we">
+            <h2>Nuestra Atmosfera</h2>
+            <p>Un vistazo a la experiencia Bella Napoli</p>
+        </div>
+
+            <figure class="mage-gallery">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVc9Njc_SLcYlH5bhPvtOWxVRpXUfqkbOtAUjQRk-qoP-DNy-ywmY70h2VrfQdV_qdghxMAC99MI1Qugfvy9xylyjkxNAAFw6QJGSjmlfXuT_MBsSq8neF5STgwYNTIsT1euFu-EWVi9iB8Mi_y8dBdFbL26WHUl8-2pLMKqaymmFxDq6kCNMcrEI00dRHGHIqpRjeif2ZsjC54JFbQLcsE4wac3R-F-f6bA5U8492qEisrt4ES_ifTbwHMrHyaV09czvsq9zWp0kl" alt="">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsPjCbBUdvCNG5ugp2wTjMJ2xbh_uXr1cIR1QAO2AuJVubGNcqS8wsNiQP9Ub-1MAzfFn-kwlBCQrft7tdz_ojVdqornzqKAO2NRsJ7rGwJ9VfJTYEEGJrk6LgW8nqTU8xormx2JIyX2J6zEloI9PDm1hwU3_NqgB8Lb7C1zCEi3EiiXzPKIPpL7B7y3KdkhhYCyMvNjNH1oxu_If6qEY7mqJlQNk9-CJ6YXqh0EVu4MgLAMBYGuEGnGClNk2ioGpOk9EMRCvcJXMN" alt="">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJpNnUJEpnAw0EsKk6T3iPmBbjl1vi4tfe1lZawuhDeGjPbaNC-iqgd-pgnhy6q6gm8-RJtBwSpzvLFQV4QuznCLm67Dytmiu6MM1XWijUo85nbh4o6TAfBeGYiXTfnIKOmHMPPxdpJG2kzmDxspyKGS4sA3Zahvxmu92PBolILnpTq1u80Qm4hH5WxOwvltHGRQZNpSCIeYg1pUF7xt1l3xuxcF1v4YneKxMF9op7TxKzOHEsOXeHVis9D0ZcmRR_EfWHvDcAxi7E" alt="">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP0wxleR4YJ5A-PblHd24C7sxcPPqldMXkgYwn683RZcZKv3HC9sAk1op1VNsU5gCg5vHuEHV3YMa91Ssc-tAjZZPYLcql4DFtwP7IfggkfWJjWpUv1UDz13l7ChPAYj6POXsaNveWFtltucFVSxNzVR053vFQhKKRW2SggywFl2dUn2v2aDFKkGic5pWwqM35zO0yjUaO8q7Kx2K-bpCoYNMGYhTvdLu9L7gFeNVtSeSsjaMpYlC0IE-UMKw8LXbQyyWK9B8_-2Qj" alt="">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx7yKhgAqop3eLQMFyrw7b0TQsmtQ_lgZAAhrM4Ah623FYTntLuD2d_t0llao30BdczC6FyZoxEVS-cz4WjHA7EwhFD1Bm7v384FS9pVlFRhS6am9bamBlLTWlrCguf-maaqHQemMU-EbjpSC3amo2PvNHYstz2-hWfrRs6eoUMRqERxbkAhyE3_fclz5JlDC9eKk07AyEt7KSpEMCP7US3uYLxZXbJ4DK83QL-4myVVwe_3vD_Xyy9X6a-1VH8XTP2MqSJPPvg2Gm" alt="">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoPiGa8Cv-3ahtMWkIebzFeGsOm14Hq8t2z7LsnL_Wxas28GiEYS7x0nGV36BDnWbnfTH7RTL36BOBRUts-Ez5h1PEid6P3XfmZrS60wkQcsC8Fug_n7NDdRF8OBRqCcol7MeQN8gk5hjxcJ0i7wEUwm2I4IMN8uhwkNvqUhov7RuhTbkMxAsVlUs3lSJPHNZU-Va7ihnFqjz98TXwgDweGXSCOIb2jD9IvbbaNMIDKHg9wEdzCuZicNWPb0ELblFSbjwu1SOkpQHk" alt="">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8VLMO3YvZ0pan2MaCwNUgVv8me6BaWinfn2r0aOa56yo2-t2RTPEvASUx17ikv83m7WxPil8T32JwJXXjTcMVnhXwoojcX8-jrwnongpJIfq4oQXMedpMxN-SsWgCXeBxVOYW0f0IkVVpULP8tBLr4thd8OGAhwNAGp_tSPnaU5b7bFxvoQhj_ZaJkYygqEJQ6ehgM7rJ6rtuwbsHPXFdWcTcA6SGClb1zharpJ4e0Dum_h5wDKmdNFOVWUp04cdLOXYZynwqst8D" alt="">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCExxSBrQrckBVUXPyaT1cQcCM2QHQHgcuPMOWxCPomRRCcsTFuouzMszCgCMppxXxIgmRDjA6MIfnTov4v7QgIFE84wlV0IV3fRr1nrDQR8SpgPUEsudXgkHvFpaFcYCFU5LyqHs3qEUa3a9iwUoMJ_aoOanq_h1-FrzBl1fGsLUVvAIg-nAPk9ygLawMSmX0-mxoJI0B1xhF5mF5jPVCK53Tc4lvKVZVo55SNmM5XwYS4QK_QCNcgp9ZbZYrrQgHNdoQxKG6p5s2B" alt="">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMNzE8CbxvMJlIfDMsniSH9Gjr_FUfTkeTc2UCfAm_qZD3tAqvZFlC8RV23Kuu8KB18rTWU3ktOSq63o4WknaSg3egQJVbU56w8w2N9hTP45YoDLKRESacyAV8e0oDIWS1c8eqozQoQIZPf24DT2P9aD50hdzCFY2O-qsrTPkRDCXPVenJu_TnIiThEulh0K9I_LpSEWcQpcOTWWrYpTkSiXzmlGXX4MpAgHRRCiDInx22GYL5dERQGbPTJH5OAuIQjP_v_U050tDd" alt="">
+            </figure>
+    </section>
+
+
+
+
+    
+</body>
+</html>
