@@ -1,0 +1,220 @@
+
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}  
+/* reseteo de margenes y paddins */  
+:root{
+    --primary--:#e63746;
+    --background-light--: #f8f6f6;
+    --background-dark--: #211112; 
+    --text--:"Work Sans", "serif";
+}
+
+body{ 
+    width: 100VW;
+    height: auto; 
+    overflow-x: hidden;     
+}
+.containerGeneral{
+    display: flex; 
+    flex-flow: column nowrap;  
+    height: auto;
+    }
+/* contenedor general padre de todos los elementos e hijo unicamente del boddy */ 
+
+.header{
+    padding: 2rem 5rem; 
+    box-shadow: 0px -2px 5px black ; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-inline: 3rem;  
+    position: fixed;
+background-color: white; 
+width: 100%;
+}
+.nom_header{/*nombre en la parte superior derecha del header*/
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    gap: .5rem; 
+    .nomText_header{
+        font-size: 20px; 
+        font-family: var(--text--);
+    } 
+    .nomIcon_header{
+        font-size: 3rem; 
+        color: var(--primary--); 
+        text-shadow: -5px 3px 5px rgba(0, 0, 0, 0.212); 
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    }
+}  
+.accessList{
+    display: flex; 
+    gap: 2rem;
+    font-size: 1.3rem; 
+    a{
+        color: #211112  ;
+        text-decoration: none; 
+        font-family: var(--text--);
+    }
+}  
+/* lista de botones del nav */
+.buttonReserva{
+    background-color: var(--primary--);  
+    width: 13rem; 
+    height: 3rem; 
+    border: none;
+    border-radius: 25px;
+    color: white; 
+    font-family: var(--text--); 
+    font-size: 20px;
+    box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.429);
+} 
+
+/*inicio del hero*/
+.hero{
+    height:90vh;   
+    width: 100%; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.74)),url(assets/index/assets/backgroundHero.png);
+    background-repeat: no-repeat;   
+    background-position: center center;
+    background-size: cover; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+ } 
+ .info{
+    display: flex; 
+    flex-flow: column nowrap;
+    height: 25rem; 
+    width: 40rem; 
+    display: flex;  
+    flex-flow: column nowrap;
+    justify-content: space-between   ; 
+    align-items: center;
+}    
+
+.title_hero{
+    font-size: 5.5rem;
+    font-family: var(--text--);
+    text-align: center; 
+    color: white;
+}
+.title_hero2{
+    color: var(--primary--);  
+
+} 
+.text_hero{
+    color:white; 
+    font-size: 20px; 
+    font-family: var(--text--); 
+    text-align: center;
+}
+.ButtonMenu_header{
+    background-color: #e63746; 
+    box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.429); 
+    width: 15rem; 
+    height: 3rem; 
+    border-radius: 25px; 
+    color: white; 
+    font-family: var(--text--); 
+    border: none; 
+    font-size: 20px; 
+    transition: .3s;
+
+} 
+.ButtonMenu_header:hover{
+    background-color: white; 
+    color: var(--text--); 
+    transition: .3s;
+} 
+/* fin de los estilos del header */  
+/* inicio de section sobre nosotros */
+.sobreNosotros{
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    flex-flow: row wrap; 
+    height: 60vh;
+    width: 100%;
+    gap: 1rem;  
+    padding: 3rem 0rem;
+    gap: 3rem;
+}
+  
+
+.boxText_sobreNosotros{/*box general sobre nosotros*/
+    width: 40%;   
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;    
+    min-width: 500px;
+
+}  
+.subtitle_boxText{
+    color: var(--primary--); 
+    font-weight: 900; 
+    font-family: var(--text--);
+    font-size: 1.2rem;
+}
+.title_boxText{
+    font-family: var(--text--); 
+    font-size: 3rem;
+}  
+.descript_boxText{
+    font-size: 1.125rem; 
+    line-height: 2.5rem;
+}
+.button_boxText{
+    font-size: 1.2rem;   
+    width: 15rem; 
+    display: flex;  
+    padding: 1rem;
+    justify-content: center; 
+    align-items: center;
+    border: 2px black solid; 
+    border-radius: 40px;
+} 
+.button_boxText:hover{
+    background-color: #e63746; 
+    border: 2px transparent solid; 
+    color: white; 
+    transition: all .3s ease;  
+}  
+.img_sobreNosotros{ 
+    width: 50%;  
+    height: 90%; 
+    background: url("assets/index/assets/sobreNosotros/Sobre\ nosotros1.png");
+    background-repeat: no-repeat;   
+    background-position: center center;
+    border-radius: 80px;     
+    background-size: cover; 
+    position: relative;
+    
+} 
+
+.descrip_img_sobreNosotros{ /*msj flotante*/
+    width: 12rem;  
+    height: 12rem;
+    font-family: var(--text--); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-transform: capitalize;
+    color: white; 
+    border-radius: 100px;  
+    background-color: #e63746; 
+    text-align: center; 
+    font-size: 1.5rem;  
+    line-height: 1.8rem;    
+    position: absolute; 
+    bottom: -8%; 
+    left: -8%;
+    /* position: absolute;  */
+    
+    
+} 
