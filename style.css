@@ -32,7 +32,8 @@ body{
     align-items: center; 
     position: fixed;
     background-color: rgba(255, 255, 255, 0.9); 
-    width: 100%;
+    width: 100%; 
+    z-index: 100;
 }
 .nom_header{/*nombre en la parte superior derecha del header*/
     display: flex; 
@@ -227,23 +228,25 @@ body{
 } 
 /* inicio de destacados */ 
 
+.destacado_Encabezado{ /*encabezado de la seccion*/
+    text-align: center;  
+    display: block;
+    width: 100%; 
+    padding-top: 3rem; 
+    background-color: #bababa51; 
+
+} 
 .Destacados{/*box de seccion de destacados*/
     width: 100vw;  
-    height: auto;
-    background-color:aqua ; 
+    height: auto; 
     display: flex;   
     flex-flow: column nowrap; 
     gap: 2rem; 
     overflow-x: scroll !important;   
     padding: 2rem;
+    background-color: #bababa51; 
 
 }  
-.destacado_Encabezado{ /*encabezado de la seccion*/
-    text-align: center;  
-    display: block;
-    width: 100%; 
-    padding-top: 3rem;
-} 
 .box_titleDestacados, .box_textDestacados{ /*textos dentro del encabezado*/
     text-align: center;
 }
@@ -255,21 +258,38 @@ body{
     flex-flow: row nowrap;   
     
 } 
-.box_carruselCard--destacados{
-    width: 25rem !important; 
-    height: 30rem; 
-    background-color: #e63746; 
-    position: relative;
-} 
+.card_boxCarrusel--destacados{
+    width: 27rem !important; 
+    height: 40rem; 
+    position: relative; 
+    padding: .5rem;
+    border-radius: 20px; 
+    background-color: white; 
+    display: flex; 
+    flex-flow: column nowrap;
+}  
+
 .card_imgBoxCarrusel{  
-    width: 25rem; 
-    height: 22rem;
+    width: 26rem; 
+    height: 21rem;
     background: url(destacado/destacado1.png); 
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center center; 
-    position: relative;  
-}
+    position: relative;   
+    border-radius: 20px ;
+} 
 .card_imgBoxCarrusel p{
-    position: absolute;
-}
+    position: absolute;  
+    right: 1rem; 
+    top:1rem;
+} 
+.buttonCard_carrusel{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+    font-family: var(--text--); 
+    padding: .5rem;  
+    width: 10rem;
+    background-color: rgb(245, 245, 245);
+} 
