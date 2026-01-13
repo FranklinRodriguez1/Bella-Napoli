@@ -25,15 +25,14 @@ body{
 /* contenedor general padre de todos los elementos e hijo unicamente del boddy */ 
 
 .header{
-    padding: 2rem 5rem; 
+    padding: 1rem 3rem; 
     box-shadow: 0px -2px 5px black ; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding-inline: 3rem;  
     position: fixed;
-background-color: white; 
-width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    width: 100%;
 }
 .nom_header{/*nombre en la parte superior derecha del header*/
     display: flex; 
@@ -41,11 +40,12 @@ width: 100%;
     align-items: center; 
     gap: .5rem; 
     .nomText_header{
-        font-size: 20px; 
+        font-size: 2rem;  
+        font-weight: 700;
         font-family: var(--text--);
     } 
     .nomIcon_header{
-        font-size: 3rem; 
+        font-size: 4rem; 
         color: var(--primary--); 
         text-shadow: -5px 3px 5px rgba(0, 0, 0, 0.212); 
         font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
@@ -53,12 +53,15 @@ width: 100%;
 }  
 .accessList{
     display: flex; 
-    gap: 2rem;
+    gap: 3rem;
     font-size: 1.3rem; 
     a{
         color: #211112  ;
         text-decoration: none; 
         font-family: var(--text--);
+    } 
+    a:hover{
+        text-decoration: underline crimson;
     }
 }  
 /* lista de botones del nav */
@@ -73,10 +76,16 @@ width: 100%;
     font-size: 20px;
     box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.429);
 } 
+.buttonReserva:hover{
+    background-color: white; 
+    color: var(--primary--); 
+    transition: .3s ease; 
+}
 
 /*inicio del hero*/
-.hero{
-    height:90vh;   
+.hero{ 
+    margin-top: 6rem;
+    height:92vh;   
     width: 100%; 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.74)),url(assets/index/assets/backgroundHero.png);
     background-repeat: no-repeat;   
@@ -138,11 +147,10 @@ width: 100%;
     justify-content: center; 
     align-items: center; 
     flex-flow: row wrap; 
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     gap: 1rem;  
     padding: 3rem 0rem;
-    gap: 3rem;
 }
   
 
@@ -186,7 +194,7 @@ width: 100%;
     transition: all .3s ease;  
 }  
 .img_sobreNosotros{ 
-    width: 50%;  
+    width: 40%;  
     height: 90%; 
     background: url("assets/index/assets/sobreNosotros/Sobre\ nosotros1.png");
     background-repeat: no-repeat;   
@@ -194,14 +202,15 @@ width: 100%;
     border-radius: 80px;     
     background-size: cover; 
     position: relative;
-    
+    padding: 1rem;
 } 
 
 .descrip_img_sobreNosotros{ /*msj flotante*/
     width: 12rem;  
     height: 12rem;
     font-family: var(--text--); 
-    display: flex; 
+    display: flex;  
+    flex-flow: column;
     align-items: center; 
     justify-content: center; 
     text-transform: capitalize;
@@ -213,8 +222,54 @@ width: 100%;
     line-height: 1.8rem;    
     position: absolute; 
     bottom: -8%; 
-    left: -8%;
-    /* position: absolute;  */
-    
+    left: -8%; 
+    gap: .5rem; 
+} 
+/* inicio de destacados */ 
+
+.Destacados{/*box de seccion de destacados*/
+    width: 100vw;  
+    height: auto;
+    background-color:aqua ; 
+    display: flex;   
+    flex-flow: column nowrap; 
+    gap: 2rem; 
+    overflow-x: scroll !important;   
+    padding: 2rem;
+
+}  
+.destacado_Encabezado{ /*encabezado de la seccion*/
+    text-align: center;  
+    display: block;
+    width: 100%; 
+    padding-top: 3rem;
+} 
+.box_titleDestacados, .box_textDestacados{ /*textos dentro del encabezado*/
+    text-align: center;
+}
+.boxDestacados{/*carrusel de destacados*/
+    display: flex; 
+    width: 200%;
+    justify-content: space-around; 
+    align-items: center;  
+    flex-flow: row nowrap;   
     
 } 
+.box_carruselCard--destacados{
+    width: 25rem !important; 
+    height: 30rem; 
+    background-color: #e63746; 
+    position: relative;
+} 
+.card_imgBoxCarrusel{  
+    width: 25rem; 
+    height: 22rem;
+    background: url(destacado/destacado1.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    position: relative;  
+}
+.card_imgBoxCarrusel p{
+    position: absolute;
+}
