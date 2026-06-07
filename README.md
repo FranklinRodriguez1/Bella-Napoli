@@ -28,6 +28,5 @@ El diseño prioriza la estética, tipografía limpia y una experiencia visual at
 🟡 En desarrollo  
 Próximamente se agregarán más secciones como menú, reservaciones y mejoras responsive.
 
-## 👨‍💻 Autor
-Desarrollado por **Tu Nombre**
+
 
